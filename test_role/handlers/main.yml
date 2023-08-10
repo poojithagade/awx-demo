@@ -1,0 +1,5 @@
+---
+# handlers file for webserver
+- name: print success message
+  ansible.builtin.debug:
+    msg: "file copied to destination successfully"

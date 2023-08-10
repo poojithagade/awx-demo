@@ -1,0 +1,12 @@
+---
+
+# - name: Create dest directory
+#   ansible.builtin.file:
+#     path: "{{ target_directory }}"
+#     state: directory
+ 
+- name: Copy source file to the target directory
+  copy:
+    src: files/test_src.txt
+    dest: test_dest.txt
+  notify: print success message
